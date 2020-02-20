@@ -17,7 +17,7 @@ pipeline {
         }
         stage(build){
             steps {
-                npm install --save core-js3
+                npm update
                 npm install
                 sh 'ng build'
             }
